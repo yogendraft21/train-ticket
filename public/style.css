@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(194, 194, 192);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    max-width: 200px;
+    /* margin-left: 100px; */
+    padding: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+label,input,button{
+    margin: 10px;
+}
+label{
+  font-size: 18px;
+  font-weight: bold;
+}
+input{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+button{
+  padding: 10px 15px;
+  width: 100%;
+  background-color: rgb(182, 35, 231);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.coach {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 100px; */
+    max-width: 500px;
+    float: right;
+    
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  /* Changing color of seats to green for booked seats */
+  .available {
+    background-color: rgb(213, 219, 213);
+  }
+  
+  /* Changing color of seats to red for unavailable seats */
+  .booked {
+    background-color: red;
+    color: #fff;
+  }
+  
