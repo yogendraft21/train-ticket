@@ -136,7 +136,7 @@
 
     <script>
       const displaySeats = async () => {
-        const res = await fetch("http://localhost:8081/allSeats");
+        const res = await fetch("https://inquisitive-cardigan-tuna.cyclic.app/allSeats");
         const data = await res.json();
         if (data) {
           for (let i = 0; i < data.length; ++i) {
@@ -154,7 +154,7 @@
       const reserveSeats = async () => {
         const numSeats = parseInt(document.getElementById("total_seats").value);
         if (numSeats <= 7) {
-          const response = await fetch("http://localhost:8081/reserve", {
+          const response = await fetch("https://inquisitive-cardigan-tuna.cyclic.app/reserve", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -175,7 +175,7 @@
       };
 
       const resetSeats = async () => {
-        const res = await fetch("http://localhost:8081/reset", {
+        const res = await fetch("https://inquisitive-cardigan-tuna.cyclic.app/reset", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

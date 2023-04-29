@@ -4,6 +4,10 @@ const Seat = require("./models/Seats.model");
 require('dotenv').config()
 const app = express();
 app.use(express.json());
+const cors = require('cors');
+app.use(cors({
+    origin: '*'
+}));
 
 // Serve static files from public directory
 app.use(express.static(__dirname + "/public"));
